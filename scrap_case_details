@@ -1,0 +1,5 @@
+from scraper import scrape_case_details
+
+case_number = 'CASE123456'
+case_details = scrape_case_details(case_number)
+print(case_details.json())
