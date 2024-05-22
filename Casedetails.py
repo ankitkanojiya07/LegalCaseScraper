@@ -1,0 +1,9 @@
+class CaseDetails(BaseModel):
+    registration_number: str
+    filing_date: str
+    parties_involved: List[str]
+    advocates: List[str]
+    judges: List[str]
+    hearing_history: List[dict]
+    applicable_acts: List[str]
+    orders: List[dict]
