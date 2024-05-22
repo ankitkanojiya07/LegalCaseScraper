@@ -1,0 +1,10 @@
+from scraper import scrape_search_results, scrape_case_details
+
+# Step 1: Scrape search results
+search_url = 'https://example.com/search-results'
+search_results = scrape_search_results(search_url)
+
+# Step 2: Scrape details for each case in search results
+for result in search_results:
+    case_details = scrape_case_details(result.case_number)
+    print(case_details.json())
