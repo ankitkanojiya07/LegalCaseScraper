@@ -1,0 +1,10 @@
+from scraper import scrape_search_results
+
+# Assume a URL that requires captcha solving
+search_url = 'https://example.com/search-results'
+# Pause execution to solve captcha manually
+input("Please solve the captcha and press Enter to continue...")
+
+search_results = scrape_search_results(search_url)
+for result in search_results:
+    print(result.json())
